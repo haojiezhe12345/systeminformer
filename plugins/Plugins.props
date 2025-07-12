@@ -6,7 +6,7 @@
         <OutDir>$(SolutionDir)..\bin\$(Configuration)$(PlatformArchitecture)\plugins\</OutDir>
         <IntDir>$(ProjectDir)obj\$(Configuration)$(PlatformArchitecture)\</IntDir>
         <!-- Debugging -->
-        <LocalDebuggerCommand>$(SolutionDir)..\bin\$(Configuration)$(PlatformArchitecture)\SystemInformer.exe</LocalDebuggerCommand>
+        <LocalDebuggerCommand>$(SolutionDir)..\bin\$(Configuration)$(PlatformArchitecture)\si.exe</LocalDebuggerCommand>
         <LocalDebuggerWorkingDirectory>$(SolutionDir)..\bin\$(Configuration)$(PlatformArchitecture)\</LocalDebuggerWorkingDirectory>
         <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     </PropertyGroup>
@@ -19,7 +19,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\i386;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -37,7 +37,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\amd64;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -55,7 +55,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\arm64;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -73,7 +73,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\i386;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -91,7 +91,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\amd64;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -109,7 +109,7 @@
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories>$(SolutionDir)..\sdk\lib\arm64;$(SolutionDir)..\tools\thirdparty\bin\$(Configuration)$(PlatformArchitecture);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories> 
-            <AdditionalDependencies>SystemInformer.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <AdditionalDependencies>si.lib;thirdparty.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
         </Link>
         <ResourceCompile>
             <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)..\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

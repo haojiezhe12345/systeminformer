@@ -636,21 +636,21 @@ namespace CustomBuildTool
             if (Flags.HasFlag(BuildFlags.BuildDebug))
             {
                 if (Flags.HasFlag(BuildFlags.Build32bit))
-                    Win32.CopyIfNewer("bin\\Debug32\\SystemInformer.lib", "sdk\\lib\\i386\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\Debug32\\si.lib", "sdk\\lib\\i386\\si.lib", Flags);
                 if (Flags.HasFlag(BuildFlags.Build64bit))
-                    Win32.CopyIfNewer("bin\\Debug64\\SystemInformer.lib", "sdk\\lib\\amd64\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\Debug64\\si.lib", "sdk\\lib\\amd64\\si.lib", Flags);
                 if (Flags.HasFlag(BuildFlags.BuildArm64bit))
-                    Win32.CopyIfNewer("bin\\DebugARM64\\SystemInformer.lib", "sdk\\lib\\arm64\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\DebugARM64\\si.lib", "sdk\\lib\\arm64\\si.lib", Flags);
             }
 
             if (Flags.HasFlag(BuildFlags.BuildRelease))
             {
                 if (Flags.HasFlag(BuildFlags.Build32bit))
-                    Win32.CopyIfNewer("bin\\Release32\\SystemInformer.lib", "sdk\\lib\\i386\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\Release32\\si.lib", "sdk\\lib\\i386\\si.lib", Flags);
                 if (Flags.HasFlag(BuildFlags.Build64bit))
-                    Win32.CopyIfNewer("bin\\Release64\\SystemInformer.lib", "sdk\\lib\\amd64\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\Release64\\si.lib", "sdk\\lib\\amd64\\si.lib", Flags);
                 if (Flags.HasFlag(BuildFlags.BuildArm64bit))
-                    Win32.CopyIfNewer("bin\\ReleaseARM64\\SystemInformer.lib", "sdk\\lib\\arm64\\SystemInformer.lib", Flags);
+                    Win32.CopyIfNewer("bin\\ReleaseARM64\\si.lib", "sdk\\lib\\arm64\\si.lib", Flags);
             }
 
             //

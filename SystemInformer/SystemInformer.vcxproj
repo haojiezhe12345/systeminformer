@@ -92,6 +92,24 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(SolutionDir)bin\$(Configuration)$(PlatformArchitecture)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(ProjectDir)obj\$(Configuration)$(PlatformArchitecture)\</IntDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>si</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)phnt\include;$(SolutionDir)phlib\include;$(SolutionDir)kphlib\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
